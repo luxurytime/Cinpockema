@@ -13,6 +13,7 @@
 
 （1）Sugar Orm：https://github.com/satyan/sugar
 
-（2）Volley：http://blog.csdn.net/guolin_blog/article/details/17482095
-             
-             http://blog.csdn.net/guolin_blog/article/details/17482165
+（2）Volley：
+
+http://blog.csdn.net/guolin_blog/article/details/17482095
+http://blog.csdn.net/guolin_blog/article/details/17482165
