@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <!--电影宣传图片-->
+    <ImageView
+        android:id="@+id/movie_pic"
+        android:src="@drawable/apple"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <!--电影名-->
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_toRightOf="@+id/movie_pic"
+        android:paddingTop="10dp"
+        android:textColor="@color/Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--电影提示信息-->
+    <TextView
+        android:id="@+id/movie_info"
+        android:layout_toRightOf="@+id/movie_pic"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:textColor="@color/DarkGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <!--评分-->
+    <TextView
+        android:id="@+id/movie_score"
+        android:textColor="@color/Orange"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/buy_ticket"
+        android:text="购票"
+        android:textColor="@color/Red"
+        android:background="@android:color/transparent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
