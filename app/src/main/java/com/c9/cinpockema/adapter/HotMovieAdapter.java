@@ -13,7 +13,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.c9.cinpockema.model.Movie;
-import com.c9.cinpocketma.R;
+import com.c9.cinpockema.R;
 
 import java.util.ArrayList;
 

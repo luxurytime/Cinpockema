@@ -10,8 +10,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.c9.cinpockema.R;
 import com.c9.cinpockema.model.Movie;
-import com.c9.cinpocketma.R;
+
 import com.c9.cinpockema.adapter.HotMovieAdapter;
 
 import java.util.ArrayList;

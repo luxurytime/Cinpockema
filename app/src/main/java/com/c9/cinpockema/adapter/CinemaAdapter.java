@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.c9.cinpocketma.R;
+
+import com.c9.cinpockema.R;
 import com.c9.cinpockema.model.Cinema;
 
 import java.util.ArrayList;
@@ -54,7 +55,7 @@ public class CinemaAdapter extends BaseAdapter {
             cinemaViewHolder = (CinemaViewHolder) convertView.getTag();
         }
         cinemaViewHolder.cinemaName.setText(cinemaList.get(position).getName());
-        cinemaViewHolder.cinemaLocation.setText(cinemaList.get(position).getLocation());
+        cinemaViewHolder.cinemaLocation.setText(cinemaList.get(position).getAddress());
         //距离的计算未解决
         cinemaViewHolder.cinemaDistance.setText("500m");
 

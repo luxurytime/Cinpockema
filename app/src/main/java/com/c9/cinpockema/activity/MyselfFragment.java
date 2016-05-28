@@ -11,7 +11,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.c9.cinpocketma.R;
+import com.c9.cinpockema.R;
+
 
 /**
  * Created by a694393453 on 2016/4/10.
@@ -29,6 +30,7 @@ public class MyselfFragment extends Fragment implements View.OnClickListener {
 //        View headLayout = view.findViewById(R.id.layout_top);
 //        headLayout.setOnClickListener(this);
 //        return view;
+
         return super.onCreateView(inflater,container,savedInstanceState);
     }
 
