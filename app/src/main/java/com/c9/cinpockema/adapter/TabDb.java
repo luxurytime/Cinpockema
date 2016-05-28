@@ -1,7 +1,7 @@
 package com.c9.cinpockema.adapter;
 
 import com.c9.cinpockema.activity.CinemaFragment;
-import com.c9.cinpocketma.R;
+import com.c9.cinpockema.R;
 import com.c9.cinpockema.activity.MovieFragment;
 import com.c9.cinpockema.activity.MyselfFragment;
 

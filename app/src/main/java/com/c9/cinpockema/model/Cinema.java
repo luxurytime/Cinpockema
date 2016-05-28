@@ -7,25 +7,52 @@ import java.util.List;
  */
 public class Cinema {
     private int id;
-    private String name;
-    private String introduction;
-    private double rating;
-    private List<CinemaComment> comments;
+    private String name;//电影院名字
+    private String introduction;//影院介绍
+    private double rating;//评分，暂时忽略
+    private List<CinemaComment> comments;//影院评论
+    private String phoneNumber;//影院电话
+    private List<Hall> halls;//影厅
+    private List<Movie> movies;//播放的电影列表
+    private List<Screening> screenings;//场次
+    //影院位置信息
+    private String address;//地址
+    private int cityId;//所属城市ID
+    private double lat;//纬度
+    private double lng;//经度
 
-    private String phoneNumber;
-    private List<Hall> halls;
-    private List<Movie> movies;
-    private List<Screening> screenings;
 
-    //定位？未完成
-    private String location;
-    public String getLocation() {
-        return location;
+    public String getAddress() {
+        return address;
     }
-    public void setLocation(String location) {
-        this.location = location;
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
+    public int getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
+    }
+
+    public double getLat() {
+        return lat;
+    }
+
+    public void setLat(double lat) {
+        this.lat = lat;
+    }
+
+    public double getLng() {
+        return lng;
+    }
+
+    public void setLng(double lng) {
+        this.lng = lng;
+    }
 
     public int getId() {
         return id;

@@ -12,7 +12,7 @@ public class User {
     private String nickName;//昵称
     private String avatarUrl;
     private List<Order> orderList;
-    private List<MovieComment> movieCommentComments;
+    private List<MovieComment> movieComments;
     private List<Movie> collections;
 
     public int getId() {
@@ -71,11 +71,11 @@ public class User {
         this.collections = collections;
     }
 
-    public List<MovieComment> getMovieCommentComments() {
-        return movieCommentComments;
+    public List<MovieComment> getMovieComments() {
+        return movieComments;
     }
 
-    public void setMovieCommentComments(List<MovieComment> movieCommentComments) {
-        this.movieCommentComments = movieCommentComments;
+    public void setMovieComments(List<MovieComment> movieComments) {
+        this.movieComments = movieComments;
     }
 }
