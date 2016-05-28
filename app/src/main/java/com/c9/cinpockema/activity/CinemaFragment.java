@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.c9.cinpocketma.R;
+import com.c9.cinpockema.R;
 import com.c9.cinpockema.adapter.CinemaAdapter;
 import com.c9.cinpockema.model.Cinema;
 
@@ -46,17 +46,17 @@ public class CinemaFragment extends Fragment {
 
         Cinema cinema0 = new Cinema();
         cinema0.setName("金逸珠江国际影城（大学城店）");
-        cinema0.setLocation("番禺区小谷围街北岗村中二横路新天地");
+        cinema0.setAddress("番禺区小谷围街北岗村中二横路新天地");
         cinemas.add(cinema0);
 
         Cinema cinema1 = new Cinema();
         cinema1.setName("广东科学中心IMAX巨幕影院");
-        cinema1.setLocation("番禺区大学城科普路168号");
+        cinema1.setAddress("番禺区大学城科普路168号");
         cinemas.add(cinema1);
 
         Cinema cinema2 = new Cinema();
         cinema2.setName("映联万和影城");
-        cinema2.setLocation("海珠区新港东路618号南丰汇广场3楼");
+        cinema2.setAddress("海珠区新港东路618号南丰汇广场3楼");
         cinemas.add(cinema2);
 
         return cinemas;

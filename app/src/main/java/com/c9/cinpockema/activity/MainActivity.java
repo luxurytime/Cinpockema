@@ -13,8 +13,13 @@ import android.widget.TabHost;
 import android.widget.TabWidget;
 import android.widget.TextView;
 
+import com.baidu.mapapi.SDKInitializer;
+import com.baidu.mapapi.model.LatLng;
+import com.baidu.mapapi.utils.DistanceUtil;
+import com.c9.cinpockema.R;
 import com.c9.cinpockema.adapter.TabDb;
-import com.c9.cinpocketma.R;
+import com.c9.cinpockema.model.LocationUtils;
+
 
 public class MainActivity extends FragmentActivity implements TabHost.OnTabChangeListener,View.OnClickListener {
 
@@ -24,6 +29,8 @@ public class MainActivity extends FragmentActivity implements TabHost.OnTabChang
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //初始化百度地图组件，每个activity使用前必须
+        SDKInitializer.initialize(getApplicationContext());
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
 
@@ -32,6 +39,9 @@ public class MainActivity extends FragmentActivity implements TabHost.OnTabChang
         tabHost.getTabWidget().setDividerDrawable(null);
         tabHost.setOnTabChangedListener(this);
         initTab();
+
+
+
     }
 
     //初始化底部栏状态
@@ -48,6 +58,18 @@ public class MainActivity extends FragmentActivity implements TabHost.OnTabChang
     //tab切换
     @Override
     public void onTabChanged(String tabId) {
+
+        //test
+        // 天安门坐标
+        double mLat1 = 39.915291;
+        double mLon1 = 116.403857;
+        // 百度大厦坐标
+        double mLat2 = 40.056858;
+        double mLon2 = 200.308194;
+        LatLng pt1 = new LatLng(mLat1, mLon1);
+        LatLng pt2 = new LatLng(mLat2, mLon2);
+        int dis = LocationUtils.getDistance(pt1, pt2);
+        Log.v("distance:",Integer.toString(dis));
         Log.v("tag id is:", tabId);
         updateTab();
     }
